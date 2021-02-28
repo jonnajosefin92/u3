@@ -6,8 +6,8 @@ html{
 }
 body {
     display: grid;
-    grid-template-columns: 120px auto auto 120px;
-    grid-template-rows: min-content 150px auto 100px;
+    grid-template-columns: 150px auto auto 120px;
+    grid-template-rows: min-content 150px auto 270px;
     grid-template-areas: 
     "nav    nav     nav    nav"
     "aside header  header header"
@@ -24,14 +24,35 @@ header{
     background-color: darksalmon;
 }
 main{
-    background-color: darkslategrey;
+    background-color: rgb(118, 173, 173);
     grid-area: main;
 }
+#wrapper{
+    background-color: rgb(132, 204, 132);
+    display: inline-block;
+
+}
+#kollage1 img{
+    max-width: 300px;
+    margin: 10px;
+    border-style: solid;
+    border-color: honeydew;
+    box-shadow:3px 3px 16px 4px rgb(73, 73, 73);
+    
+   
+}
+
 aside{
     grid-area: aside;
     background-color: floralwhite;
 }
 footer{
-    background-color: gold;
+    background-color: rgb(219, 204, 121);
     grid-area: footer;
+}
+#kontakt {
+    border-style: solid;
+}
+#adresserstudios{
+    border-style: solid;
 }
