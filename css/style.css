@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 html{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     font-size: 15px;
 }
 body {
     display: grid;
-    grid-template-columns: 150px auto auto 120px;
+    grid-template-columns: 150px auto auto 200px;
     grid-template-rows: min-content 150px auto 200px;
     grid-template-areas: 
     "nav    nav     nav    nav"
@@ -17,12 +17,12 @@ body {
 
 nav{
     grid-area: nav;
-    background-color: rgb(12, 11, 11);
+    background-color: rgb(255, 255, 255);
     padding: 1.5px;
     
 }
 nav a{
-    color: #ffffff;
+    color: #000000;
     padding: 4px;
     text-decoration-line: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -30,23 +30,75 @@ nav a{
 }
 header{
     grid-area: header;
-    background-color: rgb(156, 151, 149);
-    
+    background-color: rgb(255, 255, 255);
+    background-image: url(../img/upward\ dog.png);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: right;
+    text-align: center;
 }
+
 header h1{
     font-family: cursive;
 
 }
 main{
-    background-color: rgb(124, 126, 126);
+    background-color: rgb(255, 255, 255);
     grid-area: main;
 }
+#vilkaarvi{
+    display: ;
+}
+#vilkaarvi img{
+    width: 150px;
+    border-color: rgb(7, 6, 0);
+    border-style: solid;
+    border-width: 2px;
+
+
+}
+
 #wrapper{
-    background-color: rgb(56, 56, 56);
+    background-color: #c9c7ae;
     display: inline-block;
 
 }
-#kollage1 img{
+
+#boxstudio1 {
+    display: flex;
+    flex-wrap: wrap;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+}
+
+#beskrivningstudio1 {
+    width: 300px;
+}
+#boxstudio1 img{
+    max-width: 300px;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    border-style: solid;
+    border-color: rgb(244, 247, 244);
+    box-shadow:3px 3px 16px 4px rgb(73, 73, 73);
+    transform: scale(1);
+
+    
+}
+#boxstudio1 img:hover{
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+#boxstudio1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+#beskrivningstudio1 {
+    width: 300px;
+}
+#boxstudio1 img{
     max-width: 300px;
     width: 250px;
     height: 250px;
@@ -62,6 +114,56 @@ main{
     transition-duration: 2s;
 }
 
+#boxstudio2 {
+    display: flex;
+    flex-wrap: wrap;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+}
+
+#beskrivningstudio2 {
+    width: 300px;
+}
+#boxstudio2 img{
+    max-width: 300px;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    border-style: solid;
+    border-color: rgb(244, 247, 244);
+    box-shadow:3px 3px 16px 4px rgb(73, 73, 73);
+    transform: scale(1);
+
+    
+}
+#boxstudio2 img:hover{
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+#boxstudio2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+#beskrivningstudio2 {
+    width: 300px;
+}
+#boxstudio2 img{
+    max-width: 300px;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    border-style: solid;
+    border-color: rgb(244, 247, 244);
+    box-shadow:3px 3px 16px 4px rgb(73, 73, 73);
+    transform: scale(1);
+    
+}
+#boxstudio2 img:hover{
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+
 #prislista figure{
     border-style: solid;
     padding: 2px;
@@ -69,10 +171,18 @@ main{
 
 aside{
     grid-area: aside;
-    background-color: rgb(88, 88, 87);
+    background-color: #c9c7ae;
+    border-style: double;
+    border-color: rgb(0, 0, 0);
+    border-width: 6px;
+    margin-bottom: 4px;
+    margin-left: 5px;
+}
+aside a{
+    color: rgb(102, 9, 14);
 }
 footer{
-    background-color: rgb(156, 156, 156);
+    background-color: rgb(255, 255, 255);
     grid-area: footer;
 }
 #kontakt {
