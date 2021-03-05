@@ -20,7 +20,65 @@
         header
     </header>
     <main>
-        main
+        <h1>Bli medlem!</h1>
+        <form id="medlemskap">
+            <fieldset id="kunskapsnivå">
+            <legend>Kunskapsnivå</legend>
+            <div>
+                <label><input type="radio" value="nybörjare" name="Nybörjare">Nybörjare</label>
+                <label><input type="radio" value="mellan" name="mellan">Mellan</label>
+            </div>
+            <label><input type="radio" value="kunnig" name="kunnig">Kunnig</label>
+
+            </fieldset>
+            <fieldset id="medlemskapstyp">
+                <legend>Medlemskap</legend>
+                <div>
+                    <label>
+                        Välj abonnemangstyp <select name="abonnemang" id="abonnemang">
+                            <option value="12mån" selected>12 Månader</option>
+                            <option value="6mån">6 Månader</option>
+                            <option value="1mån">1 månad</option>
+                            <option value="dropin20">Drop in, 20</option>
+                            <option value="dropin10">Drop in 10</option>
+                            <option value="student">Student</option>
+                            <option value="privat">Privatlektion</option>
+                        </select>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset id="Kontaktuppgifter">
+                <legend>Kontaktuppgifter</legend>
+                <div>
+                    <label for="name"> *Namn</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="adress">Adress</label>
+                    <input type="text" id="adress" name="adress">
+                    <label for="zipcode">Postkod</label>
+                    <input type="text" id="zipcode" name="zipcode">
+                    <label for="city">* Stad</label>
+                    <input type="text" id="city" name="city">
+                    <label for="email">* E-mail</label>
+                    <input type="text" id="email" name="email" required>
+                    <label for="phone">* Telefonnummer</label>
+                    <input type="text" id="phone" name="phone" required>
+
+                  
+                </div>
+            </fieldset>
+            
+            <div id="send">
+                <input type="submit" value="bli medlem">
+            </div>
+            <div id="medlemsinformation">
+                Förfrågan skickas till oss, när vi mottagit den så hör vi av oss till dig och då får du tillgång till bokningssystemet. 
+
+            </div>
+
+
+        </form>
+
     </main>
     <aside>
         aside

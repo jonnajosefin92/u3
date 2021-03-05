@@ -149,6 +149,25 @@ main{
     padding-right: 10px;
 
 }
+/*Schema*/
+table{
+    background-color: #c9c7ae;
+    border-collapse: collapse;
+}
+th, td{
+    border-style: solid;
+    border-width:2px;
+    border-color: darkslategrey;
+    padding: 3px;
+}
+th{
+    background-color: #9e9d88;
+}
+ /*medlemsskap*/
+ #medlemsinformation {
+     padding: 5px;
+ }
+ 
 /*---erbjudanden aside---*/
 aside{
     grid-area: aside;
