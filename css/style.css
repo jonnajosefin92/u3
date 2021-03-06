@@ -160,6 +160,11 @@ th, td{
     border-color: darkslategrey;
     padding: 3px;
 }
+table captio
+{
+    font-style: italic;
+    text-decoration: solid;
+}
 th{
     background-color: #9e9d88;
 }
