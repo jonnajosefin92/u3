@@ -7,7 +7,7 @@ html{
 body {
     display: grid;
     grid-template-columns: 150px auto auto 200px;
-    grid-template-rows: min-content 150px auto 200px;
+    grid-template-rows: min-content 300px auto 200px;
     grid-template-areas: 
     "nav    nav     nav    nav"
     " header  header header aside"
@@ -35,15 +35,18 @@ nav a:hover{
 header{
     grid-area: header;
     background-color: rgb(255, 255, 255);
+    display: inline-block;
     background-image: url(../img/upward\ dog.png);
-    background-size: 200px;
+    background-size: 300px;
     background-repeat: no-repeat;
     background-position: right;
+    font-style: italic;
+    text-shadow: 3px 3px 7px #97948b;
+    font-family: cursive;
     text-align: center;
+
 }
 
-header h1{
-    font-family: cursive;
 
 }
 main{
@@ -137,6 +140,15 @@ main{
 #prislista figure{
     border-style: solid;
     padding: 2px;
+    
+}
+#prislista {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    position: absolute;
+  flex-wrap: wrap;
+    
 }
 .väljknapp{
     border-style: solid;
@@ -189,10 +201,13 @@ aside a{
 footer{
     background-color: rgb(255, 255, 255);
     grid-area: footer;
+    margin-top: 40px;
 }
 #kontakt {
-    border-style: solid;
+    text-align: center;
 }
 #adresserstudios{
-    border-style: solid;
+   
+    text-align: center;
 }
+
