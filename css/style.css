@@ -147,6 +147,8 @@ main{
     padding: 3px;
 }
 /*---prislista---*/
+
+
 #prislista figure{
     border-style: solid;
     padding: 2px;
@@ -157,7 +159,7 @@ main{
     flex-grow: 1;
     flex-shrink: 1;
     position: absolute;
-  flex-wrap: wrap;
+   flex-wrap: wrap;
     
 }
 .väljknapp{
@@ -194,6 +196,9 @@ th{
  #medlemsinformation {
      padding: 5px;
  }
+ #locnav{
+     display: inline;
+ }
  
 /*---erbjudanden aside---*/
 aside{
@@ -220,4 +225,21 @@ footer{
    
     text-align: center;
 }
+
+@media screen and (max-width: 500px) {
+    header {
+        background-image: none;
+    }
+    body{
+        display: grid;
+        grid-template-columns: auto min-content;
+        grid-template-rows: min-content 250px  auto 150px;
+        grid-template-areas: 
+        "nav "
+        ".  header ."
+        ".  main  ."
+        "footer";
+
+}
+
 
