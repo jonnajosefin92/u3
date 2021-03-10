@@ -21,6 +21,14 @@ nav{
     padding: 1.5px;
     
 }
+#menycheckbox {
+    display: none;
+}
+
+#supnav img{
+    width:170px;
+}
+
 #lokalnavigering{
     height: 100px;
     text-align: center;
@@ -41,10 +49,10 @@ nav a:hover{
 header{
     grid-area: header;
     background-color: rgb(255, 255, 255);
-    display: inline-block;
+    display:inline-block;
     background-image: url(../img/upward\ dog.png);
-    background-size: 300px;
-    background-repeat: no-repeat;
+    background-size:400px;
+    background-repeat:no-repeat;
     background-position: right;
     font-style: italic;
     text-shadow: 3px 3px 7px #97948b;
@@ -80,6 +88,18 @@ main{
     display: inline-block;
 
 }
+#effekter picture{
+    float: right;
+
+}
+
+#effekter figure::after{
+    content:"";
+    display: block;
+    clear: both;
+    
+}
+
 /*---STUDIO---*/
 #boxstudio1 {
     display: flex;
@@ -258,21 +278,133 @@ footer{
     transform: scale(0.8);
     transition: 2s;
 }
-
+@media screen and (max-width: 392px) {
+    #effekter picture{
+        display:none;
+    }
+}
 @media screen and (max-width: 500px) {
     header {
         background-image: none;
     }
     body{
         display: grid;
-        grid-template-columns: auto min-content;
+        grid-template-columns: auto;
         grid-template-rows: min-content 250px  auto 150px;
         grid-template-areas: 
-        "nav "
-        ".  header ."
-        ".  main  ."
+        "nav"
+        "header"
+        "main "
         "footer";
 
+    }
+    aside{
+        display: none;
+    }
+    
+/*
+@media screen and (max-width: 1160px) {
+    .floatimg{
+        float: none;
+        width: 200px;
+        transform: scale(1);
+    }
+    #box7 img:hover {
+        transform: scale(1.5);
+    }
+   
 }
+@media screen and (max-width: 750px) {
+    #menyicon {
+        display: inline-block;
+        background-image: url(../img/transparentikon.png);
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+    
+    #menycheckbox {
+    display: none;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 1s;
+    }
 
+    #menycheckbox:checked~div{
+    transform:scaleY(1);
+    }
+
+    #menycheckbox ~ ul {
+        display: none;
+    }
+    
+    #menycheckbox:checked ~ ul {
+        display: flex;
+    }
+    
+    nav {
+        background-color: #67a38c;
+        grid-area: nav;
+        text-align: center;
+        
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 0.5rem;
+        flex-direction: column;
+    }
+    
+    nav a {
+        text-decoration: none;
+        display: block;
+        
+    }
+    
+    nav a:link, nav a:visited {
+        background-color: #67a38c;
+        color: #020000;
+    }
+    
+    nav a:hover, nav a:active {
+        background-color: #407961;
+        color: #090f02;
+    }
+    
+
+@media screen and (max-width: 650px) {
+        body{
+    display: grid;
+    grid-template-columns:  auto ;
+    grid-template-rows: 250px min-content auto 150px;
+    grid-template-areas: 
+    "header "
+    ".  nav  ."
+    ".  main  ."
+    "footer";
+        }
+        header{
+            background-image: none;
+
+        }
+        footer img{
+            max-width: 100px;
+        }
+}
+@media screen and (max-width: 500px) {
+            .wrapper div{
+                border-style: none;
+
+            }
+        #box4 img{
+            max-width: 100px;
+            flex-direction: column;
+            transform: scale(1);
+        }
+        #box4 img:hover{
+            transform:scale(2);
+        }
 
