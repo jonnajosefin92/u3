@@ -223,8 +223,40 @@ footer{
     text-align: center;
 }
 #adresserstudios{
-   
+
     text-align: center;
+}
+/*---kontakt*/
+
+}
+#kontakt h2{
+    text-align: left;
+}
+
+#kontaktaoss legend{
+    font-weight: bold;
+}
+#kontaktaoss{
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    background-color: #c9c7ae;
+
+}
+#textruta{
+    padding:1.5em;
+    margin-bottom: 1.5em;
+    
+}
+#email{
+    margin-bottom: 2em;
+    margin-top: 5px;
+}
+#inspoyoga{
+    padding: 15px;
+}
+#inspoyoga img:hover{
+    transform: scale(0.8);
+    transition: 2s;
 }
 
 @media screen and (max-width: 500px) {
