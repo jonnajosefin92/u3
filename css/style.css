@@ -190,20 +190,26 @@ main{
 }
 /*---prislista---*/
  #locnav nav ul{
-    list-style: upper-roman;
+    list-style:circle;
     text-align: center;
 }
 
 #prislista figure{
     border-style: solid;
     padding: 2px;
+    justify-content: space-evenly;
+    width:250px;
+    background-color: #ebe9d7;
     
+}
+#prislista figure a{
+    color: #66090e;
 }
 #prislista {
     display: flex;
     flex-grow: 1;
     flex-shrink: 1;
-    position: absolute;
+    position: static;
    flex-wrap: wrap;
     
 }
@@ -254,7 +260,7 @@ aside{
     margin-left: 5px;
 }
 aside a{
-    color: rgb(102, 9, 14);
+    color: #66090e;
 }
 footer{
     background-color: rgb(255, 255, 255);
