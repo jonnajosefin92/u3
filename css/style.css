@@ -6,7 +6,7 @@ html{
 }
 body {
     display: grid;
-    grid-template-columns: auto auto auto 200px;
+    grid-template-columns: auto auto auto 250px;
     grid-template-rows: min-content 300px auto 200px;
     grid-template-areas: 
     "nav    nav     nav    nav"
@@ -28,12 +28,6 @@ nav{
 #supnav img{
     width:170px;
 }
-/*#lokalnavigering{
-    height: 100px;
-    text-align: center;
-   
-}*/
-
 
 
 nav a{
@@ -268,12 +262,21 @@ aside{
     border-color: rgb(0, 0, 0);
     border-width: 6px;
     margin-bottom: 4px;
-    margin-left: 5px;
+   
     font-family: Arial, Helvetica, sans-serif;
+    color: #66090e;
 }
 aside a{
     color: #66090e;
 }
+aside figure {
+    background-color: #e2dfc6;
+    padding: 4px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 1.2px;
+}
+
 
 footer{
     background-color: rgb(255, 255, 255);
