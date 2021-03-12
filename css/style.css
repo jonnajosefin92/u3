@@ -248,6 +248,9 @@ table captio
 th{
     background-color: #9e9d88;
 }
+table a {
+    color: #66090e;
+}
  /*medlemsskap*/
  #medlemsinformation {
      padding: 5px;
