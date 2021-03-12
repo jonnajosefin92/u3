@@ -230,9 +230,13 @@ main{
 
 }
 /*Schema*/
+#schema{
+    text-align: center;
+}
 table{
     background-color: #c9c7ae;
     border-collapse: collapse;
+    
 }
 th, td{
     border-style: solid;
