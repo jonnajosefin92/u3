@@ -104,12 +104,37 @@ main{
 #boxstudio1 {
     display: flex;
     flex-wrap: wrap;
+    padding: 13px;
+    flex-direction: row;
+    gap:15px;
+    justify-content: space-evenly;
 }
 #boxstudio2 {
     display: flex;
     flex-wrap: wrap;
-    
+    padding: 13px;
+    flex-direction: row;
+    gap:15px;
+    justify-content: space-evenly;
    
+}
+#boxstudio1 figure{
+    max-width: 300px;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+}
+#boxstudio2 figure{
+    max-width: 300px;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+}
+#map{
+    max-width: 300px;
+    width: 250px;
+    height: 250px;
+    margin: 10px; 
 }
 
 #boxstudio1 img{
@@ -142,28 +167,21 @@ main{
     transform: scale(1.2);
     transition-duration: 2s;
 }
-#boxstudio1 {
-    display: flex;
-    flex-wrap: wrap;
-}
-#boxstudio2 {
-    display: flex;
-    flex-wrap: wrap;
-}
+
 #beskrivningstudio1 {
     width: 300px;
-    background-color: rgb(255, 255, 255);
+    background-color: #c9c7ae;
     border-color: rgb(8, 4, 0);
-    border-width: 2px;
-    border-style: solid;
+    border-width: 3px;
+    border-style: double;
     padding: 3px;
 }
 #beskrivningstudio2 {
     width: 300px;
-    background-color: rgb(255, 255, 255);
+    background-color: #c9c7ae;
     border-color: rgb(8, 4, 0);
-    border-width: 2px;
-    border-style: solid;
+    border-width: 3px;
+    border-style: double;
     padding: 3px;
 }
 /*---prislista---*/
@@ -302,109 +320,5 @@ footer{
         display: none;
     }
     
-/*
-@media screen and (max-width: 1160px) {
-    .floatimg{
-        float: none;
-        width: 200px;
-        transform: scale(1);
-    }
-    #box7 img:hover {
-        transform: scale(1.5);
-    }
-   
-}
-@media screen and (max-width: 750px) {
-    #menyicon {
-        display: inline-block;
-        background-image: url(../img/transparentikon.png);
-        width: 24px;
-        height: 24px;
-        cursor: pointer;
-    }
-    
-    #menycheckbox {
-    display: none;
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: transform 1s;
-    }
 
-    #menycheckbox:checked~div{
-    transform:scaleY(1);
-    }
-
-    #menycheckbox ~ ul {
-        display: none;
-    }
-    
-    #menycheckbox:checked ~ ul {
-        display: flex;
-    }
-    
-    nav {
-        background-color: #67a38c;
-        grid-area: nav;
-        text-align: center;
-        
-    }
-    
-    nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        gap: 0.5rem;
-        flex-direction: column;
-    }
-    
-    nav a {
-        text-decoration: none;
-        display: block;
-        
-    }
-    
-    nav a:link, nav a:visited {
-        background-color: #67a38c;
-        color: #020000;
-    }
-    
-    nav a:hover, nav a:active {
-        background-color: #407961;
-        color: #090f02;
-    }
-    
-
-@media screen and (max-width: 650px) {
-        body{
-    display: grid;
-    grid-template-columns:  auto ;
-    grid-template-rows: 250px min-content auto 150px;
-    grid-template-areas: 
-    "header "
-    ".  nav  ."
-    ".  main  ."
-    "footer";
-        }
-        header{
-            background-image: none;
-
-        }
-        footer img{
-            max-width: 100px;
-        }
-}
-@media screen and (max-width: 500px) {
-            .wrapper div{
-                border-style: none;
-
-            }
-        #box4 img{
-            max-width: 100px;
-            flex-direction: column;
-            transform: scale(1);
-        }
-        #box4 img:hover{
-            transform:scale(2);
-        }
 
