@@ -255,6 +255,21 @@ th{
 table a {
     color: #66090e;
 }
+/*---BOKA___*/
+#boka fieldset{
+     padding: 15px;
+     margin: 12px;
+     background-color: #c9c7ae;
+     
+}
+#boka fieldset div{
+    display: grid;
+     gap: 0,7em;
+}
+
+#boka legend{
+    font-weight: bold;
+}
  /*medlemsskap*/
  #medlemsinformation {
      padding: 5px;
