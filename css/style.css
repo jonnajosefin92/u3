@@ -231,6 +231,14 @@ main{
     margin-bottom: 12px;
 
 }
+/*---klasser*/
+
+#klasser figure img{
+    width: 250px;
+    float: right;
+    margin: 15px;
+
+}
 
 /*Schema*/
 #schema{
