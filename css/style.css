@@ -227,8 +227,11 @@ main{
     padding: 2px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-left: 100px;
+    margin-bottom: 12px;
 
 }
+
 /*Schema*/
 #schema{
     text-align: center;
@@ -271,7 +274,6 @@ table a {
      padding: 5px;
  }
 
- 
 /*---erbjudanden aside---*/
 aside{
     grid-area: aside;
@@ -333,13 +335,10 @@ footer{
     margin-bottom: 2em;
     margin-top: 5px;
 }
-#inspoyoga{
-    padding: 15px;
+#inspofilm iframe{
+    
 }
-#inspoyoga img:hover{
-    transform: scale(0.8);
-    transition: 2s;
-}
+
 @media screen and (max-width: 392px) {
     #effekter picture{
         display:none;
