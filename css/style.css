@@ -239,6 +239,7 @@ main{
     margin: 15px;
 
 }
+#klasse
 
 /*Schema*/
 #schema{
@@ -276,6 +277,10 @@ table a {
 
 #boka legend{
     font-weight: bold;
+}
+#kontaktuppgifter{
+    display: grid;
+    
 }
  /*medlemsskap*/
  #medlemsinformation {
@@ -356,19 +361,6 @@ footer{
     header {
         background-image: none;
     }
-    body{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: min-content 250px  auto 150px;
-        grid-template-areas: 
-        "nav"
-        "header"
-        "main "
-        "footer";
-
-    }
-    aside{
-        display: none;
-    }
+   
    
 
