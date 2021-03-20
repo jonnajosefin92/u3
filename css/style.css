@@ -137,6 +137,7 @@ main{
     margin: 10px; 
 }
 
+
 #boxstudio1 img{
     max-width: 300px;
     width: 250px;
@@ -144,8 +145,7 @@ main{
     margin: 5px;
     border-style: solid;
     border-color: rgb(244, 247, 244);
-    box-shadow:3px 3px 16px 4px rgb(73, 73, 73);
-    transform: scale(1);
+    box-shadow:3px 3px 20px 7px rgb(73, 73, 73);
 
 }
 #boxstudio2 img{
@@ -155,18 +155,59 @@ main{
     margin: 10px;
     border-style: solid;
     border-color: #f4f7f4;
-    box-shadow:3px 3px 16px 4px rgb(73, 73, 73);
-    transform: scale(1);   
+    box-shadow:3px 3px 20px 7px rgb(73, 73, 73);
+      
 }
 
-#boxstudio1 img:hover{
-    transform: scale(1.2);
-    transition-duration: 2s;
+#boxstudio2 input{
+    display: none;
 }
-#boxstudio2 img:hover{
-    transform: scale(1.2);
-    transition-duration: 2s;
+#boxstudio2 input + span{
+    cursor: zoom-in;
 }
+#boxstudio2 input:checked + span{
+    cursor: zoom-out;
+    position: fixed;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    background-color: #c9c7ae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#boxstudio2 input:checked +span img{
+    width: auto;
+    height: auto;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+#boxstudio1 input{
+    display: none;
+}
+#boxstudio1 input + span{
+    cursor: zoom-in;
+}
+#boxstudio1 input:checked + span{
+    cursor: zoom-out;
+    position: fixed;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    background-color: #c9c7ae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#boxstudio1 input:checked +span img{
+    width: auto;
+    height: auto;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
 
 #beskrivningstudio1 {
     width: 300px;
