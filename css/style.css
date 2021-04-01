@@ -57,7 +57,6 @@ header{
 }
 
 
-}
 main{
     background-color: rgb(255, 255, 255);
     grid-area: main;
@@ -234,7 +233,7 @@ main{
 #locnav ul li{
     display: inline-block;
     margin: 20px;
-    font-weight: 2px;
+    font-weight:bold;
     font-size: 1.5rem;
     
 }
@@ -313,7 +312,7 @@ table a {
 }
 #boka fieldset div{
     display: grid;
-     gap: 0,7em;
+     gap: 0.7em;
 }
 
 #boka legend{
@@ -366,7 +365,6 @@ footer{
 }
 /*---kontakt*/
 
-}
 #kontakt h2{
     text-align: left;
 }
@@ -396,12 +394,8 @@ footer{
 @media screen and (max-width: 392px) {
     #effekter picture{
         display:none;
-    }
+
 }
 @media screen and (max-width: 500px) {
     header {
-        background-image: none;
-    }
-   
-   
-
+        background-image: none; }
